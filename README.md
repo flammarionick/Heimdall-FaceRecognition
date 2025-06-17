@@ -18,13 +18,14 @@ Total samples: Over 3,000 images with labels
 Preprocessing: Image normalization, label encoding, and flattening into 1D arrays
 
 Findings & Result Summary
-Model Instance	Optimizer	Epochs	EarlyStopping	Loss	Accuracy	Precision	Recall	F1-score
-Baseline NN (instance_1)	Adam	10	No	2.9906	0.0785	0.0310	0.0790	0.0303
-Optimized NN (instance_2)	RMSprop	30	Yes	2.7163	0.1939	0.1859	0.1927	0.1371
-Deep NN (instance_3)	Adam	40	Yes	3.3983	0.0331	0.0012	0.0333	0.0023
-Shallow NN (instance_4)	SGD	50	Yes	3.3996	0.0368	0.0041	0.0370	0.0061
-Logistic Regression	N/A	N/A	No	0.0143	0.9988	0.9989	0.9988	0.9988
-Logistic Regression (Tuned)	N/A	N/A	No	0.0143	0.9988	0.9989	0.9988	0.9988
+Instance	     Optimizer         	Epochs	    EarlyStopping	     Loss	    Accuracy	     Precision	      Recall	          F1-score
+  0	       instance_1	          Adam	10	       False        2.990607    0.078528	     0.030991	       0.079012           0.030285
+  1  	     instance_2   	   RMSprop	30	       True	        2.716355	  0.193865	     0.185908	       0.192725           0.137108
+  2	       instance_3	          Adam	40	       True	        3.398325	  0.033129	     0.001197        0.033333           0.002311
+  3        instance_4           	SGD	50	       True	        3.399580	  0.036810	     0.004076	       0.037037           0.006139
+  4	    LogisticRegression	     N/A	N/A	       False	      0.014345	  0.998773	     0.998851	       0.998765           0.998786
+  5	    LogisticRegression_Tuned	N/A	N/A	       False	      0.014345	  0.998773	     0.998851	       0.998765           0.998786
+
 
 Summary of Best Combination
 The best-performing combination was Logistic Regression with hyperparameter tuning, achieving ~99.88% accuracy, near-perfect precision, recall, and F1-score. This model used:
@@ -76,13 +77,6 @@ Metadata CSV: facepix_metadata_named.csv
 Saved models will be stored in: saved_models/
 
 
-Instance	     Optimizer         	Epochs	    EarlyStopping	     Loss	    Accuracy	     Precision	      Recall	          F1-score
-  0	       instance_1	          Adam	10	       False        2.990607    0.078528	     0.030991	       0.079012           0.030285
-  1  	     instance_2   	   RMSprop	30	       True	        2.716355	  0.193865	     0.185908	       0.192725           0.137108
-  2	       instance_3	          Adam	40	       True	        3.398325	  0.033129	     0.001197        0.033333           0.002311
-  3        instance_4           	SGD	50	       True	        3.399580	  0.036810	     0.004076	       0.037037           0.006139
-  4	    LogisticRegression	     N/A	N/A	       False	      0.014345	  0.998773	     0.998851	       0.998765           0.998786
-  5	    LogisticRegression_Tuned	N/A	N/A	       False	      0.014345	  0.998773	     0.998851	       0.998765           0.998786
 
 
 Load Best Saved Model
