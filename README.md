@@ -75,6 +75,15 @@ Metadata CSV: facepix_metadata_named.csv
 
 Saved models will be stored in: saved_models/
 
+Instance	Optimizer	Epochs	EarlyStopping	Loss	Accuracy	Precision	Recall	F1-score
+0	instance_1	Adam	10	False	2.990607	0.078528	0.030991	0.079012	0.030285
+1	instance_2	RMSprop	30	True	2.716355	0.193865	0.185908	0.192725	0.137108
+2	instance_3	Adam	40	True	3.398325	0.033129	0.001197	0.033333	0.002311
+3	instance_4	SGD	50	True	3.399580	0.036810	0.004076	0.037037	0.006139
+4	LogisticRegression	N/A	N/A	False	0.014345	0.998773	0.998851	0.998765	0.998786
+5	LogisticRegression_Tuned	N/A	N/A	False	0.014345	0.998773	0.998851	0.998765	0.998786
+
+
 Load Best Saved Model
 To use the best performing model:
 
