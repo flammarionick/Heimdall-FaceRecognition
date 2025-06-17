@@ -1,4 +1,4 @@
-#Heimdall Face Classification: Neural Network vs Classical ML
+#Heimdall Face Classification: Neural Network vs Classical ML#
 
 Problem Statement
 This project explores the implementation of supervised learning models on the FacePix dataset to classify grayscale facial images of 30 individuals.
