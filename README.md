@@ -92,3 +92,4 @@ import joblib
 model = joblib.load("saved_models/logistic_regression_model.pkl")
 predictions = model.predict(X_test)
 
+Video presentation link: https://youtu.be/njSr9P12Lkw 
